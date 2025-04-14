@@ -60,7 +60,9 @@
   
 While waterfall models typically require all requirements analysis and design to be done before coding, the structure of this small application is more in line with the characteristics of agile development - you can start with simple features and then gradually add features based on needs and feedback.
 If this is a larger project, Agile methods might involve Sprint planning, daily standing meetings, retrospective meetings, and more agile practices.
+
 2. Members
+
 3. Schedule
 Our project schedule is divided into three phases：
 * Phase 1:
