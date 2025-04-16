@@ -1,4 +1,4 @@
-<img width="617" alt="Member" src="https://github.com/user-attachments/assets/f2714970-d6fc-430a-979b-99ab2819d2d8" /># To-do-list
+# To-do-list
   A desktop GUI application that focuses on to-do management and task flow organization for individuals and small teams.
   
 # Graphical Abstract:
@@ -62,7 +62,7 @@ While waterfall models typically require all requirements analysis and design to
 If this is a larger project, Agile methods might involve Sprint planning, daily standing meetings, retrospective meetings, and more agile practices.
 
 2. Members
-[Member.docx](https://github.com/user-attachments/files/19774704/Member.docx)
+<img width="617" alt="Member" src="https://github.com/user-attachments/assets/f2714970-d6fc-430a-979b-99ab2819d2d8" />
 
 3. Schedule
 Our project schedule is divided into three phases：
