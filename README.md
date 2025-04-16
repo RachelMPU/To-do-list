@@ -46,7 +46,7 @@
 4. Search function; text search by task name or description
 5. Task priority: supports high, medium, and low priority settings
 6. Due date setting: can set a due date for tasks
-7. Task tags: supports multiple types of tags ( personal, urgent)
+7. Task tags: supports multiple types of tags ( work, study, personal, urgent)
 8. Task details: contains detailed information such as creation time,completion time, description, etc.
 9. Persistent storage: save task data to JSON files
 
@@ -66,10 +66,12 @@ AC1: When the "unfinished" button is clicked, only the tasks whose status is "un
 AC2: The filtering operation should respond within 1 second (performance constraint).
 * Output: Refined user stories (including AC) for inclusion in the current Sprint Backlog.
 3. Step 3: Minimize the specification document
-* Use user story interaction + visual prototype instead.
-* Use Figma or click sketch to show UI interaction (e.g. right-click task to bring up context menu), corresponding to the PPT "prototyping support requirements verification".
-* Maintain a dynamic Backlog in Confluence or Trello to update the status of requirements in real time (pending/in progress/completed).
-* Output: Portable prototype (for demonstration) + prioritized backlog (with story point hints).
+<img width="689" alt="1" src="https://github.com/user-attachments/assets/e31762eb-fe0c-4836-a537-f6dea53608c9" />
+* Use Figma or click sketch to show UI interaction, corresponding to the PPT "prototyping support requirements verification".
+(It has been released in the graphical abstarct) 
+* A prioritized backlog of work (functionality to be implemented) to-do list.
+<img width="771" alt="2" src="https://github.com/user-attachments/assets/fe46fe51-7e2e-454e-b7f4-50a0be9e0561" />
+
 ## Design & Implementation: Iterative Development
 Architecture Design (Evolutionary Design)
 * Step 1: Initial Architecture Definition (Sprint 0)
