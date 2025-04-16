@@ -62,7 +62,7 @@ While waterfall models typically require all requirements analysis and design to
 If this is a larger project, Agile methods might involve Sprint planning, daily standing meetings, retrospective meetings, and more agile practices.
 
 2. Members
-<img width="617" alt="Member" src="https://github.com/user-attachments/assets/f2714970-d6fc-430a-979b-99ab2819d2d8" />
+<img width="613" alt="Member" src="https://github.com/user-attachments/assets/cad1ab54-287d-4826-9f95-c26edb107dad" />
 
 3. Schedule
 Our project schedule is divided into three phases：
