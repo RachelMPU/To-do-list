@@ -50,6 +50,51 @@
 8. Task details: contains detailed information such as creation time,completion time, description, etc.
 9. Persistent storage: save task data to JSON files
 
+# The software process
+## Specification
+Requirements elicitation and analysis: Agile Requirements Engineering
+1. Step 1: User story development
+* Prior To the formal development of the project, we conduct competitive product analysis and market research on the To-Do list (e.g. task management pain points for students and small teams).
+* After market research, we found that many users still have some shortcomings when using similar software, such as the need for complete networking, product functions are too complex. In addition, few of the existing products can really meet the needs of users, such as project prioritization.
+* Activities: Use a user story template to describe requirements (e.g., "As a student, I want to filter tasks by the 'homework' TAB so that I can focus on academic tasks"), following a role-goal-scenario structure.
+* Output: List of user stories with priority.
+* Agile principles: Practice "customer collaboration" and identify needs through continuous interaction.
+2. Step 2: Requirements refinement and acceptance criteria definition
+* Activity: Segmentation (decomposition) of advanced user stories (such as "Task filtering" divided into "status filtering", "label filtering", "date filtering" subtasks).
+* Define Acceptance criteria (AC, Acceptance criteria) for each user story, such as:
+AC1: When the "unfinished" button is clicked, only the tasks whose status is "unfinished" are displayed;
+AC2: The filtering operation should respond within 1 second (performance constraint).
+* Output: Refined user stories (including AC) for inclusion in the current Sprint Backlog.
+3. Step 3: Minimize the specification document
+* Use user story interaction + visual prototype instead.
+* Use Figma or click sketch to show UI interaction (e.g. right-click task to bring up context menu), corresponding to the PPT "prototyping support requirements verification".
+* Maintain a dynamic Backlog in Confluence or Trello to update the status of requirements in real time (pending/in progress/completed).
+* Output: Portable prototype (for demonstration) + prioritized backlog (with story point hints).
+## Design & Implementation: Iterative Development
+Architecture Design (Evolutionary Design)
+* Step 1: Initial Architecture Definition (Sprint 0)
+Activities: (GUI layer, business logic layer, data layer), define core modules and interfaces:
+GUI layer: Tkinter components (Main Window, Task Treeview, Dialog window, Context Menu), relying on ttk to achieve the theme;
+Business logic layer: TodoAppGUI class encapsulates task management methods (add_task(), filter_tasks());
+Data layer: JSON file persistence (load_tasks(), save_tasks()), reserved extension interface (support SQLite or cloud synchronization in the future).
+* Step 2: Iterative design optimization
+Perform local design for the current user story (e.g., when implementing "priority tags", design color coding rules: high priority → red, medium → yellow, low → green)
+Use refactoring technology to avoid code bloat
+* Step 3: Sprint planning and task allocation
+Before each sprint (2 weeks as an example), the team selects high-priority user stories from the Product Backlog and breaks them down into technical tasks
+Pay attention to the to-do list and record the task status in real time: to-do → in progress → to be tested → completed.
+* Step 4: Incremental coding and integration
+Follow test-driven development (TDD): first write unit tests (such as verifying due_date format verification logic), then implement the code to ensure coverage ≥ 80%
+Perform continuous integration (CI) daily: merge code through Github, use automation tools to automatically run unit tests, and avoid integration conflicts. Output: runnable incremental versions (e.g. Sprint 1 delivers basic task CRUD functions, Sprint 2 adds filtering/sorting).
+
+## Validation and Testing
+1. Unit testing: verifying a single component (such as the set_priority() method of the Task data model);
+2. Integration testing: verifying component interactions (such as whether the UI correctly updates the color code after modifying the task priority);
+3. System testing: end-to-end testing (such as creating a task → setting a deadline → filtering "due today" tasks and checking whether they are displayed correctly);
+4. User acceptance testing (UAT): We will invite real users (such as students and corporate users) to verify with actual data.
+## Evolution: Continuous Improvement and Iteration
+After the verification activities in the previous step, we will release the verified and tested version and invite users to use our soft.
+
 # Software development plan
 1. Development process: We choose agile development.
   Agile development is flexible and adaptable, allowing incremental and iterative development to quickly respond to changing requirements, making it particularly suitable for to-do list managers, as user requirements for task management features may evolve over time. Unlike the rigid, sequential waterfall model, agile development supports continuous feedback and improvement, ensuring that the software remains relevant and user-friendly.
