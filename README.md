@@ -67,8 +67,10 @@ AC2: The filtering operation should respond within 1 second (performance constra
 * Output: Refined user stories (including AC) for inclusion in the current Sprint Backlog.
 3. Step 3: Minimize the specification document
 <img width="689" alt="1" src="https://github.com/user-attachments/assets/e31762eb-fe0c-4836-a537-f6dea53608c9" />
+
 * Use Figma or click sketch to show UI interaction, corresponding to the PPT "prototyping support requirements verification".
-(It has been released in the graphical abstarct) 
+(It has been released in the graphical abstarct)
+
 * A prioritized backlog of work (functionality to be implemented) to-do list.
 <img width="771" alt="2" src="https://github.com/user-attachments/assets/fe46fe51-7e2e-454e-b7f4-50a0be9e0561" />
 
