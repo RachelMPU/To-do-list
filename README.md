@@ -137,7 +137,7 @@ Complete document writing and video recording, ready for delivery.
 - Task export: You can export tasks to a text file.
 - Menu system: Contains menu options for exporting tasks, exiting applications, and so on.
 - About: Displays the version and brief description of the application.
-8. Future plan
+5. Future plan
 - Enhanced user interface:
 Improve user experience with a more modern UI design.Add more customization options such as theme color, font size, etc.
 - Data storage optimization:
